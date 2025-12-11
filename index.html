@@ -39,6 +39,19 @@
       padding: 1.75rem 1.75rem 1.5rem;
       box-shadow: 0 10px 30px rgba(0,0,0,0.03);
       border: 1px solid #e2e2ea;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      border: 3px solid #ffffff;
     }
 
     .name {
@@ -159,57 +172,55 @@
     }
   </style>
 </head>
+
 <body>
   <div class="page">
+
     <header>
-      <h1 class="name">Carmen Ramírez Folch</h1>
-      <p class="title-line">
-        PhD Researcher in Political Science, European University Institute
-      </p>
-      <p class="meta-line">
-        Department of Social and Political Sciences · Supervisor: Simon Hix
-      </p>
-      <p class="contact">
-        Email:
-        <a href="mailto:Carmen.RamirezFolch@eui.eu">Carmen.RamirezFolch@eui.eu</a>
-        ·
-        <a href="cv.pdf">Curriculum Vitae (PDF)</a>
-        ·
-        <!-- Replace the # with your real profile links when you have them -->
-        <a href="#" title="Add your Google Scholar link here">Google Scholar</a>
-        ·
-        <a href="#" title="Add your ORCID link here">ORCID</a>
-        ·
-        <a href="#" title="Add your LinkedIn link here">LinkedIn</a>
-      </p>
-      <div class="tag-row">
-        <span class="tag">Judicial Politics</span>
-        <span class="tag">Gender & Politics</span>
-        <span class="tag">Empirical Legal Studies</span>
-        <span class="tag">Causal Inference</span>
-        <span class="tag">Experimental Methods</span>
+      <img src="photo.jpg" alt="Carmen Ramírez Folch" />
+      <div style="flex: 1; min-width: 250px;">
+        <h1 class="name">Carmen Ramírez Folch</h1>
+        <p class="title-line">
+          PhD Researcher in Political Science, European University Institute
+        </p>
+        <p class="meta-line">
+          Department of Social and Political Sciences · Supervisor: Simon Hix
+        </p>
+
+        <p class="contact">
+          Email:
+          <a href="mailto:Carmen.RamirezFolch@eui.eu">Carmen.RamirezFolch@eui.eu</a>
+          · <a href="cv.pdf">Curriculum Vitae (PDF)</a>
+          · <a href="#">Google Scholar</a>
+          · <a href="#">ORCID</a>
+          · <a href="#">LinkedIn</a>
+        </p>
+
+        <div class="tag-row">
+          <span class="tag">Judicial Politics</span>
+          <span class="tag">Gender & Politics</span>
+          <span class="tag">Empirical Legal Studies</span>
+          <span class="tag">Causal Inference</span>
+          <span class="tag">Experimental Methods</span>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- LEFT COLUMN -->
       <div>
         <section id="about">
           <h2>About Me</h2>
           <p>
             I am a political scientist and PhD researcher at the European University Institute.
-            Broadly, my work examines how courts respond to social and political change, with a
-            particular focus on gender-based violence, public opinion, and the legitimacy of the
-            judiciary. I combine large-scale administrative data from the Spanish judiciary with
-            causal inference methods and survey and conjoint experiments to study judicial
-            behaviour and public trust in the justice system.
+            My work examines how courts respond to social and political change, with a particular
+            focus on gender-based violence, public opinion, and the legitimacy of the judiciary.
           </p>
           <p>
-            Before starting my PhD, I studied Political Science and Philosophy at the University
-            of Barcelona and worked as a research assistant on several projects on gender
-            inequality, judicial careers, and education policy. These experiences shaped my
-            interest in how institutions can both reproduce and mitigate inequalities, and how
-            citizens perceive the fairness of judicial outcomes.
+            I combine administrative court data with causal inference and experimental methods to
+            understand both judicial behaviour and citizens’ perceptions of fairness. Before the
+            PhD, I worked as a research assistant on projects related to gender inequality,
+            judicial careers, and education policy, and studied Political Science and Philosophy
+            at the University of Barcelona.
           </p>
         </section>
 
@@ -217,51 +228,40 @@
           <h2>Research Interests</h2>
           <ul>
             <li>Judicial politics and empirical legal studies</li>
-            <li>Gender-based violence and gender inequality in the judiciary</li>
+            <li>Gender-based violence and inequality in the judiciary</li>
             <li>Public opinion, legitimacy, and trust in institutions</li>
             <li>Algorithmic decision-making and justice</li>
-            <li>Causal inference with observational data and experimental methods</li>
+            <li>Causal inference & experimental methods</li>
           </ul>
         </section>
 
         <section id="dissertation">
           <h2>Dissertation Projects</h2>
-          <p class="small">
-            My dissertation investigates how judges make decisions in gender-based violence cases,
-            and how public opinion, institutional reforms, and emerging technologies shape both
-            judicial behaviour and public trust in the justice system.
-          </p>
+
           <ol>
             <li>
-              <strong>Judging Under Pressure: Public Opinion and Judicial Decisions in Sexual Violence Cases</strong><br />
-              This project examines when and why judges respond to public opinion. Using
-              approximately 10,000 rulings on sexual violence and theft from Spanish intermediate
-              courts (2015–2020), I study how the highly publicised <em>“Manada”</em> case and its
-              subsequent overturning by the Supreme Court affected conviction rates. I show that
-              responsiveness is conditional: nationally, judges aligned with the Supreme Court
-              rather than with protest demands, while locally, in Navarra, exposure to protests
-              was associated with higher conviction rates in sexual violence cases.
+              <strong>Judging Under Pressure: Public Opinion and Judicial Decisions in Sexual Violence Cases</strong><br/>
+              Using ~10,000 rulings (2015–2020), I examine how the highly publicised
+              <em>“Manada”</em> case shaped conviction rates in Spanish courts. I show that judges
+              tended to align with the Supreme Court’s overturn rather than national protest
+              demands, while local exposure to protests increased conviction rates in Navarra.
             </li>
+
             <li>
-              <strong>Algorithmic Justice and Gender-Based Violence: Fairness, Alignment, and Public Perception</strong><br />
-              Co-authored with Siegfried Manschein.<br />
-              As judicial systems explore algorithmic tools to assist decision-making, concerns
-              arise about fairness, transparency, and trust. In this project, we reconstruct
-              gender-based violence cases from legal databases to fine-tune large language models
-              and compare their suggested resolutions with actual judicial outcomes. We then run a
-              conjoint experiment to examine how different process features – including
-              algorithmic recommendations, chatbot assistance, risk assessments, and transparency –
-              shape citizens’ perceptions of fairness in the judicial process.
+              <strong>Algorithmic Justice and Gender-Based Violence</strong>  
+              <em>(with Siegfried Manschein)</em><br/>
+              We reconstruct GBV cases using legal databases to fine-tune large language models
+              and compare algorithmic resolutions with judicial decisions. A conjoint experiment
+              evaluates how transparency, risk assessments, and AI assistance shape perceptions of
+              fairness in judicial processes.
             </li>
+
             <li>
-              <strong>The Effects of Intimate Partner Violence Courts on Judicial Outcomes</strong><br />
-              Co-authored with Joan-Josep Vallbé.<br />
-              Many civil law systems have introduced specialised courts for intimate partner
-              violence, yet their impact on judicial performance remains understudied. Using
-              administrative data from Spanish courts (2005–2023) and a staggered
-              difference-in-differences design, this project exploits population thresholds and
-              temporal variation in the creation of specialised courts to assess their effects on
-              conviction rates, protection orders, and victim support measures.
+              <strong>The Effects of Intimate Partner Violence Courts</strong>  
+              <em>(with Joan-Josep Vallbé)</em><br/>
+              Using administrative data (2005–2023) and a staggered diff-in-diff design, we study
+              how specialised IPV courts affect conviction rates, protection measures, and judicial
+              performance across Spanish districts.
             </li>
           </ol>
         </section>
@@ -269,20 +269,14 @@
         <section id="works-in-progress">
           <h2>Works in Progress</h2>
           <ol>
-            <li>
-              <span class="pub-authors">Carmen Ramírez Folch.</span>
-              <span class="pub-title">Judging Under Pressure: Analyzing the Effects of Public Opinion on Judicial Decisions in Sexual Violence Cases.</span>
-              Working paper.
+            <li><strong>Carmen Ramírez Folch.</strong>
+              <em>Judging Under Pressure: Public Opinion and Judicial Decisions in Sexual Violence Cases.</em>
             </li>
-            <li>
-              <span class="pub-authors">Carmen Ramírez Folch &amp; Siegfried Manschein.</span>
-              <span class="pub-title">Algorithmic Justice and Gender-Based Violence: Fairness, Alignment, and Public Perception.</span>
-              Project under development.
+            <li><strong>Carmen Ramírez Folch & Siegfried Manschein.</strong>
+              <em>Algorithmic Justice and Gender-Based Violence.</em>
             </li>
-            <li>
-              <span class="pub-authors">Carmen Ramírez Folch &amp; Joan-Josep Vallbé.</span>
-              <span class="pub-title">The Effects of Intimate Partner Violence Courts on Judicial Outcomes.</span>
-              Data collection and analysis in progress.
+            <li><strong>Carmen Ramírez Folch & Joan-Josep Vallbé.</strong>
+              <em>The Effects of Intimate Partner Violence Courts.</em>
             </li>
           </ol>
         </section>
@@ -291,96 +285,57 @@
           <h2>Publications</h2>
           <ol>
             <li>
-              <span class="pub-authors">Carmen Ramírez-Folch &amp; Joan-Josep Vallbé.</span>
-              <span class="pub-title">Gender, Promotion, and Judicial Careers in a Civil Law System.</span>
-              <em>Governance</em>, 2025, forthcoming.
-              <!-- Add DOI link when available -->
+              <strong>Carmen Ramírez-Folch & Joan-Josep Vallbé.</strong>
+              <em>Gender, Promotion, and Judicial Careers in a Civil Law System.</em>
+              Governance, 2025 (forthcoming).
             </li>
+
             <li>
-              <span class="pub-authors">Joan-Josep Vallbé &amp; Carmen Ramírez-Folch.</span>
-              <span class="pub-title">The Effect of Judges’ Gender on Decisions Regarding Intimate-Partner Violence.</span>
-              <em>Journal of Empirical Legal Studies</em> 20(3), 641–668, 2023.
+              <strong>Joan-Josep Vallbé & Carmen Ramírez-Folch.</strong>
+              <em>The Effect of Judges’ Gender on Decisions Regarding Intimate-Partner Violence.</em>
+              Journal of Empirical Legal Studies 20(3), 641–668, 2023.  
               <a href="https://doi.org/10.1111/jels.12341">https://doi.org/10.1111/jels.12341</a>
             </li>
           </ol>
         </section>
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div>
         <section id="news">
           <h2>News & Activities</h2>
           <ul>
-            <li>
-              <span class="year">2025</span>
-              Presenting work at the European Political Science Association (EPSA) Conference,
-              Universidad Carlos III de Madrid.
-            </li>
-            <li>
-              <span class="year">2025</span>
-              Participation in the Third Annual CIVICA Political Behavior and Institutions
-              (PoBI) Conference at Central European University.
-            </li>
-            <li>
-              <span class="year">2024</span>
-              Workshop on Social Science Approaches to Law and Courts, University College London.
-            </li>
-            <li>
-              <span class="year">2024</span>
-              FEMETRICS – Visible Women: Gender, Data, Social Europe Conference, European
-              University Institute.
-            </li>
+            <li><span class="year">2025</span> Presenting at the European Political Science Association (EPSA), UC3M.</li>
+            <li><span class="year">2025</span> CIVICA PoBI Conference, Central European University.</li>
+            <li><span class="year">2024</span> Workshop on Law & Courts, University College London.</li>
+            <li><span class="year">2024</span> FEMETRICS – Visible Women Conference, EUI.</li>
           </ul>
         </section>
 
         <section id="experience">
           <h2>Research Experience</h2>
           <ul>
-            <li>
-              <span class="year">2024–</span>
-              Research Assistant, <em>FEMETRICS: Visible Women – Gender, Data, Social Europe</em>,
-              European University Institute. Data analysis and visualisation on gender and social
-              policy, and support for mixed-methods research.
-            </li>
-            <li>
-              <span class="year">2022–2023</span>
-              Research Assistant, <em>RCT in Ghana: Nudges to Improve Learning and Gender Parity</em>,
-              University of Barcelona. Cleaning, visualising, and analysing survey data in Stata
-              and R, and contributing to literature review and background reports.
-            </li>
-            <li>
-              <span class="year">2022</span>
-              Research Assistant, <em>Gender Wealth Inequality Project</em>, Barcelona Economic
-              Institute. Processing micro-data in R and co-drafting the technical report.
-            </li>
-            <li>
-              <span class="year">2020–2022</span>
-              Research Assistant, <em>Political Economy of Gender &amp; Inequality in the Spanish Judiciary</em>,
-              University of Barcelona. Web-scraping court-case metadata, building datasets in R,
-              and conducting literature review on gender bias in legal decision-making.
-            </li>
+            <li><span class="year">2024–</span> Research Assistant, FEMETRICS, EUI.</li>
+            <li><span class="year">2022–23</span> RCT in Ghana (learning & gender parity), University of Barcelona.</li>
+            <li><span class="year">2022</span> Gender Wealth Inequality Project, Barcelona Economic Institute.</li>
+            <li><span class="year">2020–22</span> Judicial gender bias project, University of Barcelona.</li>
           </ul>
         </section>
 
         <section id="teaching">
-          <h2>Teaching & Methods</h2>
-          <p class="small">
-            I have supported courses and research projects in quantitative methods, political
-            economy, and empirical legal studies. I am happy to share teaching materials upon
-            request.
-          </p>
+          <h2>Teaching & Skills</h2>
           <ul>
-            <li><span class="year">Methods</span> Causal inference with observational data, experimental design, text-as-data.</li>
-            <li><span class="year">Software</span> R, RStudio, Stata, LaTeX/Overleaf, Office suite.</li>
-            <li><span class="year">Languages</span> Catalan and Spanish (native), English (advanced), French (intermediate).</li>
+            <li><span class="year">Methods:</span> Causal inference, experiments, text-as-data.</li>
+            <li><span class="year">Software:</span> R, Stata, RStudio, LaTeX, Office.</li>
+            <li><span class="year">Languages:</span> Catalan, Spanish, English, French.</li>
           </ul>
         </section>
       </div>
     </main>
 
     <footer>
-      Last updated: May 2025 · This site is a personal webpage and does not represent the views of any institution.
+      Last updated: May 2025 · Personal website hosted on GitHub Pages
     </footer>
+
   </div>
 </body>
 </html>
