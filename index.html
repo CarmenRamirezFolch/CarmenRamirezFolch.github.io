@@ -1,11 +1,386 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Carmen Ramírez Folch</title>
+  <meta charset="UTF-8" />
+  <title>Carmen Ramírez Folch – Political Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --accent: #1b4b8f;
+      --accent-soft: #e5edf8;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    header {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 1.75rem 1.75rem 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      border: 1px solid #e2e2ea;
+    }
+
+    .name {
+      margin: 0;
+      font-size: 2.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .title-line {
+      margin: 0.4rem 0 0.6rem;
+      color: var(--text-muted);
+      font-size: 1.02rem;
+    }
+
+    .meta-line {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.98rem;
+    }
+
+    .contact {
+      margin-top: 0.9rem;
+      font-size: 0.96rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .tag-row {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .tag {
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    main {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 2.7fr) minmax(0, 1.8fr);
+      gap: 1.75rem;
+    }
+
+    @media (max-width: 830px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 14px;
+      padding: 1.4rem 1.5rem 1.6rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #e2e2ea;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--accent);
+    }
+
+    p {
+      margin-top: 0.2rem;
+      margin-bottom: 0.7rem;
+    }
+
+    ul, ol {
+      margin: 0.3rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+
+    .pub-authors {
+      font-weight: 600;
+    }
+
+    .pub-title {
+      font-style: italic;
+    }
+
+    .year {
+      font-weight: 600;
+      margin-right: 0.35rem;
+    }
+
+    .small {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, soy Carmen Ramírez Folch</h1>
-  <p>Mi página de PhD está en construcción.</p>
+  <div class="page">
+    <header>
+      <h1 class="name">Carmen Ramírez Folch</h1>
+      <p class="title-line">
+        PhD Researcher in Political Science, European University Institute
+      </p>
+      <p class="meta-line">
+        Department of Social and Political Sciences · Supervisor: Simon Hix
+      </p>
+      <p class="contact">
+        Email:
+        <a href="mailto:Carmen.RamirezFolch@eui.eu">Carmen.RamirezFolch@eui.eu</a>
+        ·
+        <a href="cv.pdf">Curriculum Vitae (PDF)</a>
+        ·
+        <!-- Replace the # with your real profile links when you have them -->
+        <a href="#" title="Add your Google Scholar link here">Google Scholar</a>
+        ·
+        <a href="#" title="Add your ORCID link here">ORCID</a>
+        ·
+        <a href="#" title="Add your LinkedIn link here">LinkedIn</a>
+      </p>
+      <div class="tag-row">
+        <span class="tag">Judicial Politics</span>
+        <span class="tag">Gender & Politics</span>
+        <span class="tag">Empirical Legal Studies</span>
+        <span class="tag">Causal Inference</span>
+        <span class="tag">Experimental Methods</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- LEFT COLUMN -->
+      <div>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>
+            I am a political scientist and PhD researcher at the European University Institute.
+            Broadly, my work examines how courts respond to social and political change, with a
+            particular focus on gender-based violence, public opinion, and the legitimacy of the
+            judiciary. I combine large-scale administrative data from the Spanish judiciary with
+            causal inference methods and survey and conjoint experiments to study judicial
+            behaviour and public trust in the justice system.
+          </p>
+          <p>
+            Before starting my PhD, I studied Political Science and Philosophy at the University
+            of Barcelona and worked as a research assistant on several projects on gender
+            inequality, judicial careers, and education policy. These experiences shaped my
+            interest in how institutions can both reproduce and mitigate inequalities, and how
+            citizens perceive the fairness of judicial outcomes.
+          </p>
+        </section>
+
+        <section id="research">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Judicial politics and empirical legal studies</li>
+            <li>Gender-based violence and gender inequality in the judiciary</li>
+            <li>Public opinion, legitimacy, and trust in institutions</li>
+            <li>Algorithmic decision-making and justice</li>
+            <li>Causal inference with observational data and experimental methods</li>
+          </ul>
+        </section>
+
+        <section id="dissertation">
+          <h2>Dissertation Projects</h2>
+          <p class="small">
+            My dissertation investigates how judges make decisions in gender-based violence cases,
+            and how public opinion, institutional reforms, and emerging technologies shape both
+            judicial behaviour and public trust in the justice system.
+          </p>
+          <ol>
+            <li>
+              <strong>Judging Under Pressure: Public Opinion and Judicial Decisions in Sexual Violence Cases</strong><br />
+              This project examines when and why judges respond to public opinion. Using
+              approximately 10,000 rulings on sexual violence and theft from Spanish intermediate
+              courts (2015–2020), I study how the highly publicised <em>“Manada”</em> case and its
+              subsequent overturning by the Supreme Court affected conviction rates. I show that
+              responsiveness is conditional: nationally, judges aligned with the Supreme Court
+              rather than with protest demands, while locally, in Navarra, exposure to protests
+              was associated with higher conviction rates in sexual violence cases.
+            </li>
+            <li>
+              <strong>Algorithmic Justice and Gender-Based Violence: Fairness, Alignment, and Public Perception</strong><br />
+              Co-authored with Siegfried Manschein.<br />
+              As judicial systems explore algorithmic tools to assist decision-making, concerns
+              arise about fairness, transparency, and trust. In this project, we reconstruct
+              gender-based violence cases from legal databases to fine-tune large language models
+              and compare their suggested resolutions with actual judicial outcomes. We then run a
+              conjoint experiment to examine how different process features – including
+              algorithmic recommendations, chatbot assistance, risk assessments, and transparency –
+              shape citizens’ perceptions of fairness in the judicial process.
+            </li>
+            <li>
+              <strong>The Effects of Intimate Partner Violence Courts on Judicial Outcomes</strong><br />
+              Co-authored with Joan-Josep Vallbé.<br />
+              Many civil law systems have introduced specialised courts for intimate partner
+              violence, yet their impact on judicial performance remains understudied. Using
+              administrative data from Spanish courts (2005–2023) and a staggered
+              difference-in-differences design, this project exploits population thresholds and
+              temporal variation in the creation of specialised courts to assess their effects on
+              conviction rates, protection orders, and victim support measures.
+            </li>
+          </ol>
+        </section>
+
+        <section id="works-in-progress">
+          <h2>Works in Progress</h2>
+          <ol>
+            <li>
+              <span class="pub-authors">Carmen Ramírez Folch.</span>
+              <span class="pub-title">Judging Under Pressure: Analyzing the Effects of Public Opinion on Judicial Decisions in Sexual Violence Cases.</span>
+              Working paper.
+            </li>
+            <li>
+              <span class="pub-authors">Carmen Ramírez Folch &amp; Siegfried Manschein.</span>
+              <span class="pub-title">Algorithmic Justice and Gender-Based Violence: Fairness, Alignment, and Public Perception.</span>
+              Project under development.
+            </li>
+            <li>
+              <span class="pub-authors">Carmen Ramírez Folch &amp; Joan-Josep Vallbé.</span>
+              <span class="pub-title">The Effects of Intimate Partner Violence Courts on Judicial Outcomes.</span>
+              Data collection and analysis in progress.
+            </li>
+          </ol>
+        </section>
+
+        <section id="publications">
+          <h2>Publications</h2>
+          <ol>
+            <li>
+              <span class="pub-authors">Carmen Ramírez-Folch &amp; Joan-Josep Vallbé.</span>
+              <span class="pub-title">Gender, Promotion, and Judicial Careers in a Civil Law System.</span>
+              <em>Governance</em>, 2025, forthcoming.
+              <!-- Add DOI link when available -->
+            </li>
+            <li>
+              <span class="pub-authors">Joan-Josep Vallbé &amp; Carmen Ramírez-Folch.</span>
+              <span class="pub-title">The Effect of Judges’ Gender on Decisions Regarding Intimate-Partner Violence.</span>
+              <em>Journal of Empirical Legal Studies</em> 20(3), 641–668, 2023.
+              <a href="https://doi.org/10.1111/jels.12341">https://doi.org/10.1111/jels.12341</a>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+        <section id="news">
+          <h2>News & Activities</h2>
+          <ul>
+            <li>
+              <span class="year">2025</span>
+              Presenting work at the European Political Science Association (EPSA) Conference,
+              Universidad Carlos III de Madrid.
+            </li>
+            <li>
+              <span class="year">2025</span>
+              Participation in the Third Annual CIVICA Political Behavior and Institutions
+              (PoBI) Conference at Central European University.
+            </li>
+            <li>
+              <span class="year">2024</span>
+              Workshop on Social Science Approaches to Law and Courts, University College London.
+            </li>
+            <li>
+              <span class="year">2024</span>
+              FEMETRICS – Visible Women: Gender, Data, Social Europe Conference, European
+              University Institute.
+            </li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Research Experience</h2>
+          <ul>
+            <li>
+              <span class="year">2024–</span>
+              Research Assistant, <em>FEMETRICS: Visible Women – Gender, Data, Social Europe</em>,
+              European University Institute. Data analysis and visualisation on gender and social
+              policy, and support for mixed-methods research.
+            </li>
+            <li>
+              <span class="year">2022–2023</span>
+              Research Assistant, <em>RCT in Ghana: Nudges to Improve Learning and Gender Parity</em>,
+              University of Barcelona. Cleaning, visualising, and analysing survey data in Stata
+              and R, and contributing to literature review and background reports.
+            </li>
+            <li>
+              <span class="year">2022</span>
+              Research Assistant, <em>Gender Wealth Inequality Project</em>, Barcelona Economic
+              Institute. Processing micro-data in R and co-drafting the technical report.
+            </li>
+            <li>
+              <span class="year">2020–2022</span>
+              Research Assistant, <em>Political Economy of Gender &amp; Inequality in the Spanish Judiciary</em>,
+              University of Barcelona. Web-scraping court-case metadata, building datasets in R,
+              and conducting literature review on gender bias in legal decision-making.
+            </li>
+          </ul>
+        </section>
+
+        <section id="teaching">
+          <h2>Teaching & Methods</h2>
+          <p class="small">
+            I have supported courses and research projects in quantitative methods, political
+            economy, and empirical legal studies. I am happy to share teaching materials upon
+            request.
+          </p>
+          <ul>
+            <li><span class="year">Methods</span> Causal inference with observational data, experimental design, text-as-data.</li>
+            <li><span class="year">Software</span> R, RStudio, Stata, LaTeX/Overleaf, Office suite.</li>
+            <li><span class="year">Languages</span> Catalan and Spanish (native), English (advanced), French (intermediate).</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Last updated: May 2025 · This site is a personal webpage and does not represent the views of any institution.
+    </footer>
+  </div>
 </body>
 </html>
